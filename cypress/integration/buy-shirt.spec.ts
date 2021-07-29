@@ -8,7 +8,14 @@ describe("Buy a t-shirt", () => {
 
     cy.get("#email").type("aperdomobo@gmail.com");
     cy.get("#passwd").type("WorkshopProtractor");
+    cy.get("#SubmitLogin").click();
 
+    cy.get(".cart_navigation span").click();
+    cy.get(".checkbox span").click();
+    cy.get(".cart_navigation span").click();
+
+    cy.get(".payment_module .bankwire span").click();
+    cy.get(".cart_navigation span").click();
     // Debes completar la prueba ... implementa los pasos 8 al 13, del proceso de compra
 
     cy.get("#center_column > div > p > strong")
