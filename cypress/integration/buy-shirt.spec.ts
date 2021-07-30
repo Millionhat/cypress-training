@@ -16,7 +16,6 @@ describe("Buy a t-shirt", () => {
 
     cy.get(".payment_module .bankwire span").click();
     cy.get(".cart_navigation span").click();
-    // Debes completar la prueba ... implementa los pasos 8 al 13, del proceso de compra
 
     cy.get("#center_column > div > p > strong")
       .should("have.text", "Your order on My Store is complete.");
